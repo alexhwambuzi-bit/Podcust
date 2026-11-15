@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header img {
+    width: 10rem;
+}
+
+.banner {
+    display: flex;
+}
+
+.banner-image,
+.banner-text {
+    width: 50%;
+}
+
+.banner-image img {
+    width: 48rem;
+}
+
+.banner-text {
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    font-size: 24px;
+}
+
+.banner-text h1 {
+    margin-bottom: 2rem;
+}
+
+.banner-text button {
+    margin-top: 3rem;
+    padding: 10px;
+    width: 155px;
+    border-radius: 23px;
+    color: white;
+    background-color: grey;
+    border: none;
+}
+
+.episode {
+    padding: 4rem;
+    text-align: center;
+}
+
+.episode h4,
+.episode h2 {
+    margin-bottom: 2rem;
+}
+
+
+.cards {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 3rem;
+    padding-left: 12rem;
+}
+
+.category {
+    width: 25%;
+    border-radius: 4px;
+    text-align: center;
+    background-color: rgb(168, 163, 163);
+    margin-left: 2rem;
+}
+
+.category img {
+    width: 100%;
+    height: auto;
+}
+
+.category:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.form {
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+form,
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+fieldset {
+    background-color: grey;
+    border: none;
+    border-radius: 8px;
+}
+
+fieldset button {
+    width: 30%;
+    margin: 8px 0;
+    padding: 4px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(167, 144, 144);
+
+}
+
+fieldset button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    background-color: aquamarine;
+    color: white;
+}
+
+fieldset input,
+fieldset textarea {
+    border-color: grey;
+    margin-top: 10px;
+    border: none;
+}
+
+
+footer {
+    background-color: grey;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+
+@media (max-width: 578px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner-text{
+        width: 100%;
+    }
+
+    .cards{
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    .category{
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .form{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+    }
+
+}
